@@ -14,6 +14,7 @@
 		6E5BD40C1F08B20200E7CFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BD40A1F08B20200E7CFD6 /* LaunchScreen.storyboard */; };
 		6E5BD4171F08B20200E7CFD6 /* BackBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BD4161F08B20200E7CFD6 /* BackBuzzTests.swift */; };
 		6E5BD4221F08B20200E7CFD6 /* BackBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BD4211F08B20200E7CFD6 /* BackBuzzUITests.swift */; };
+		6EB84C391F08BB680016FFF2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB84C381F08BB680016FFF2 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6E5BD41D1F08B20200E7CFD6 /* BackBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5BD4211F08B20200E7CFD6 /* BackBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBuzzUITests.swift; sourceTree = "<group>"; };
 		6E5BD4231F08B20200E7CFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB84C381F08BB680016FFF2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB84C391F08BB680016FFF2 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				6E5BD4151F08B20200E7CFD6 /* BackBuzzTests */,
 				6E5BD4201F08B20200E7CFD6 /* BackBuzzUITests */,
 				6E5BD3FF1F08B20100E7CFD6 /* Products */,
+				6EB84C371F08BB680016FFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				6E5BD4231F08B20200E7CFD6 /* Info.plist */,
 			);
 			path = BackBuzzUITests;
+			sourceTree = "<group>";
+		};
+		6EB84C371F08BB680016FFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB84C381F08BB680016FFF2 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +529,7 @@
 				6E5BD4281F08B20200E7CFD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E5BD4291F08B20200E7CFD6 /* Build configuration list for PBXNativeTarget "BackBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +538,7 @@
 				6E5BD42B1F08B20200E7CFD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E5BD42C1F08B20200E7CFD6 /* Build configuration list for PBXNativeTarget "BackBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +547,7 @@
 				6E5BD42E1F08B20200E7CFD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
