@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3983341F08D2AE00EF4D60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3983331F08D2AE00EF4D60 /* Images.xcassets */; };
+		6E3983361F08DC5E00EF4D60 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3983351F08DC5E00EF4D60 /* NotificationItem.swift */; };
+		6E3983381F08DDF600EF4D60 /* NotificationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3983371F08DDF600EF4D60 /* NotificationQueue.swift */; };
 		6E5BD4021F08B20200E7CFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BD4011F08B20200E7CFD6 /* AppDelegate.swift */; };
 		6E5BD4041F08B20200E7CFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BD4031F08B20200E7CFD6 /* ViewController.swift */; };
 		6E5BD4071F08B20200E7CFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BD4051F08B20200E7CFD6 /* Main.storyboard */; };
@@ -14,7 +17,6 @@
 		6E5BD40C1F08B20200E7CFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BD40A1F08B20200E7CFD6 /* LaunchScreen.storyboard */; };
 		6E5BD4171F08B20200E7CFD6 /* BackBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BD4161F08B20200E7CFD6 /* BackBuzzTests.swift */; };
 		6E5BD4221F08B20200E7CFD6 /* BackBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BD4211F08B20200E7CFD6 /* BackBuzzUITests.swift */; };
-		6EB84C391F08BB680016FFF2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB84C381F08BB680016FFF2 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E3983331F08D2AE00EF4D60 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E3983351F08DC5E00EF4D60 /* NotificationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
+		6E3983371F08DDF600EF4D60 /* NotificationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationQueue.swift; sourceTree = "<group>"; };
 		6E5BD3FE1F08B20100E7CFD6 /* BackBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5BD4011F08B20200E7CFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E5BD4031F08B20200E7CFD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EB84C391F08BB680016FFF2 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,11 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				6E5BD4011F08B20200E7CFD6 /* AppDelegate.swift */,
+				6E3983351F08DC5E00EF4D60 /* NotificationItem.swift */,
+				6E3983371F08DDF600EF4D60 /* NotificationQueue.swift */,
 				6E5BD4031F08B20200E7CFD6 /* ViewController.swift */,
 				6E5BD4051F08B20200E7CFD6 /* Main.storyboard */,
 				6E5BD4081F08B20200E7CFD6 /* Assets.xcassets */,
 				6E5BD40A1F08B20200E7CFD6 /* LaunchScreen.storyboard */,
 				6E5BD40D1F08B20200E7CFD6 /* Info.plist */,
+				6E3983331F08D2AE00EF4D60 /* Images.xcassets */,
 			);
 			path = BackBuzz;
 			sourceTree = "<group>";
@@ -200,7 +207,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Prateek Shah";
 				TargetAttributes = {
 					6E5BD3FD1F08B20100E7CFD6 = {
@@ -209,7 +216,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -252,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3983341F08D2AE00EF4D60 /* Images.xcassets in Resources */,
 				6E5BD40C1F08B20200E7CFD6 /* LaunchScreen.storyboard in Resources */,
 				6E5BD4091F08B20200E7CFD6 /* Assets.xcassets in Resources */,
 				6E5BD4071F08B20200E7CFD6 /* Main.storyboard in Resources */,
@@ -281,6 +289,8 @@
 			files = (
 				6E5BD4041F08B20200E7CFD6 /* ViewController.swift in Sources */,
 				6E5BD4021F08B20200E7CFD6 /* AppDelegate.swift in Sources */,
+				6E3983381F08DDF600EF4D60 /* NotificationQueue.swift in Sources */,
+				6E3983361F08DC5E00EF4D60 /* NotificationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +363,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -375,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,6 +413,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -430,8 +442,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 87GHM986NK;
 				INFOPLIST_FILE = BackBuzz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = prateek.ideas.BackBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,8 +457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 87GHM986NK;
 				INFOPLIST_FILE = BackBuzz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = prateek.ideas.BackBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";

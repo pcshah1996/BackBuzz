@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import AudioToolbox.AudioServices
-import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -25,18 +23,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
-            print("AV running")
-            do {
-                try AVAudioSession.sharedInstance().setActive(true)
-                print("AV is Active")
-            } catch {
-                print(error)
-            }
-        } catch {
-            print(error)
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,7 +39,6 @@ class ViewController: UIViewController {
         } else {
             bottomLabel.text = "minutes"
         }
-        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
     }
 
     @IBAction func activateBuzz(_ sender: UISwitch, forEvent event: UIEvent) {
@@ -61,6 +46,10 @@ class ViewController: UIViewController {
             topLabel.text = "Buzzing every"
             timeSlider.alpha = 0.2
             timeSlider.isEnabled = false
+            for idx in 0...5 {
+                let notif = NotificationItem(deadline: Date() + Double(idx * 5) , title: "Wooooo!", UUID: UUID().uuidString)
+                NotificationQueue.sharedInstance.addItem(notif)
+            }
 
         } else {
             topLabel.text = "Buzz every"
