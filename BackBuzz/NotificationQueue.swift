@@ -65,4 +65,13 @@ class NotificationQueue {
 
     }
     
+    @discardableResult func clear() -> Bool {        
+        UIApplication.shared.cancelAllLocalNotifications()
+
+        if var notificationItems = UserDefaults.standard.dictionary(forKey: APP_KEY) {
+            notificationItems = [:]
+        }
+        return true
+    }
+    
 }
